@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VrChatCompanion.Android", "VrChatCompanion\VrChatCompanion.Android\VrChatCompanion.Android.csproj", "{608DC491-E8A7-4B6C-A4D9-6CDD319FB5F8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VrChatCompanion", "VrChatCompanion\VrChatCompanion\VrChatCompanion.csproj", "{FB44002E-A4C9-4CB6-8ED7-29D99D28A419}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{608DC491-E8A7-4B6C-A4D9-6CDD319FB5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{608DC491-E8A7-4B6C-A4D9-6CDD319FB5F8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{608DC491-E8A7-4B6C-A4D9-6CDD319FB5F8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FB44002E-A4C9-4CB6-8ED7-29D99D28A419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB44002E-A4C9-4CB6-8ED7-29D99D28A419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB44002E-A4C9-4CB6-8ED7-29D99D28A419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB44002E-A4C9-4CB6-8ED7-29D99D28A419}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
