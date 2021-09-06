@@ -1,15 +1,16 @@
-﻿using Xamarin.Forms;
-using VRChatAPI;
+﻿using io.github.vrchatapi.Api;
+using Xamarin.Forms;
 
 namespace VrChatCompanion
 {
     public partial class App : Application
     {
+        public static AuthenticationApi AuthApi { get; set; }
+
         public App()
         {
             InitializeComponent();
-
-            DependencyService.Register<VRChatAPIClient>();
+            
             MainPage = new AppShell();
         }
 

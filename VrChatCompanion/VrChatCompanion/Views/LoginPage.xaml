@@ -4,22 +4,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:VrChatCompanion.ViewModels;assembly=VrChatCompanion"
              mc:Ignorable="d"
              x:Class="VrChatCompanion.Views.LoginPage"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False" BackgroundColor="AliceBlue">
+    <ContentPage.BindingContext>
+        <viewModels:LoginViewModel />
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
             <Image Source="app_logo.png" />
-            <Frame Margin="10">
+            <Frame Margin="10" Style="{StaticResource LoginBox}">
                 <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
                     <Label TextColor="Accent" Text="Login" FontSize="24" />
                     <Entry Placeholder="Username"
                            PlaceholderColor="Accent"
-                           ClearButtonVisibility="WhileEditing" />
+                           ClearButtonVisibility="WhileEditing"
+                           TextColor="Accent"
+                           Text="{Binding Username, Mode=TwoWay}" />
                     <Entry Placeholder="Password" 
                            IsPassword="True" 
                            PlaceholderColor="Accent"
-                           ClearButtonVisibility="WhileEditing" />
+                           ClearButtonVisibility="WhileEditing"
+                           TextColor="Accent"
+                           Text="{Binding Password, Mode=TwoWay}"/>
+                    <Frame Padding="10" BackgroundColor="Red" IsVisible="{Binding IsErrorVisible, Mode=TwoWay}">
+                        <Label TextColor="White" Text="{Binding ErrorMessage, Mode=TwoWay}" />
+                    </Frame>
                     <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}" />
                 </StackLayout>
             </Frame>

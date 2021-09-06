@@ -6,19 +6,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Prism.Core" Version="8.1.97" />
-    <PackageReference Include="Prism.Forms" Version="8.1.97" />
-    <PackageReference Include="VRChatAPI.Net" Version="1.2.5" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Blake2Sharp">
-      <HintPath>..\Blake2Sharp.dll</HintPath>
+    <Reference Include="io.github.vrchatapi">
+      <HintPath>..\io.github.vrchatapi.dll</HintPath>
     </Reference>
-    <Reference Include="librsync.net">
-      <HintPath>..\librsync.net.dll</HintPath>
+    <Reference Include="JsonSubTypes">
+      <HintPath>..\JsonSubTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\RestSharp.dll</HintPath>
     </Reference>
   </ItemGroup>
 

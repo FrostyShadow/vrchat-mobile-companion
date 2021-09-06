@@ -10,9 +10,9 @@
         <ResourceDictionary>
             <Color x:Key="Primary">#2196F3</Color>
             <Style x:Key="LoginBox" TargetType="Frame">
-                <Setter Property="BackgroundColor" Value="LightGray" />
-                <Setter Property="BorderColor" Value="Gray" />
-                <Setter Property="CornerRadius" Value="10" />
+                <Setter Property="BackgroundColor" Value="AliceBlue" />
+                <!--<Setter Property="BorderColor" Value="{StaticResource Primary}" />-->
+                <Setter Property="CornerRadius" Value="5" />
                 <Setter Property="HasShadow" Value="True" />
             </Style>
             <Style TargetType="Button">

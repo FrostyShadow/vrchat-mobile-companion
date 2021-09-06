@@ -9,11 +9,17 @@
         <viewModels:HomeViewModel />
     </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="{Binding Text}"
-                   TextColor="{StaticResource Primary}"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal">
+                <Frame CornerRadius="500" Margin="10" Padding="-10" WidthRequest="150">
+                    <Image Source="{Binding UserIcon, Mode=TwoWay}" />
+                </Frame>
+                <Label Text="{Binding Text}"
+                       TextColor="{StaticResource Primary}"
+                       FontSize="18"
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="StartAndExpand" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

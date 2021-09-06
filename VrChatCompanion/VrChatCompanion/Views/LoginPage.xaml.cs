@@ -10,7 +10,6 @@ namespace VrChatCompanion.Views
         public LoginPage()
         {
             InitializeComponent();
-            BindingContext = new LoginViewModel();
         }
     }
 }
